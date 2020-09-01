@@ -1,0 +1,21 @@
+
+create table produto (
+    id bigint not null auto_increment,
+    cest bigint,
+    cfop varchar(255),
+    ncm varchar(255),
+    cean bigint,
+    ceantrib varchar(255),
+    c_prod varchar(255),
+    dt_cadastro datetime,
+    ind_tot integer,
+    n_item_ped integer,
+    q_com decimal(19,2),
+    q_trib decimal(19,2),
+    u_com varchar(255),
+    u_trib varchar(255),
+    v_desc decimal(19,2),
+    v_prod decimal(19,2),
+    v_un_com decimal(19,2),
+    v_un_trib decimal(19,2),
+    x_prod varchar(255), primary key (id)) engine=InnoDB default charset=utf8;
