@@ -1,6 +1,7 @@
 package br.com.cupom.api.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import lombok.Data;
 
 import javax.validation.constraints.Min;
@@ -8,6 +9,23 @@ import javax.validation.constraints.PositiveOrZero;
 import java.math.BigDecimal;
 
 @Data
+@JsonPropertyOrder({"cProd",
+        "cEAN",
+        "xProd",
+        "NCM",
+        "CEST",
+        "CFOP",
+        "uCom",
+        "qCom",
+        "vUnCom",
+        "vProd",
+        "cEANTrib",
+        "uTrib",
+        "qTrib",
+        "vUnTrib",
+        "vDesc",
+        "indTot",
+        "nItemPed"})
 public class ProdutoModel {
 
     @JsonProperty("cProd")

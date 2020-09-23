@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 public class ProdutoService {
 
     @Autowired
-    ProdutoRepository produtoRepository;
+    private ProdutoRepository produtoRepository;
 
     private boolean produtoCadastrado(Produto produto){
         return produtoRepository.existsBycEAN(produto.getCEAN());

@@ -1,4 +1,4 @@
-package br.com.cupom;
+package br.com.cupom.config;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;
